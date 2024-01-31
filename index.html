@@ -1,27 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giveaway App</title>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwindcss -->
-    <link rel="stylesheet" href="./assets/css/output.css">
-</head>
-<body class="bg-gray-100">
-<header class="p-10 bg-blue-900 text-center">
-    <h1 class="text-orange-600 font-black text-2xl">CYBERDUDE</h1>
-    <P class="text-sm text-gray-400 mt-2 font-semibold">Free education for everyone</P>
-</header>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="bg-gray-200">
+    <header class="p-10 bg-blue-900 text-center">
+      <h1 class="text-orange-600 font-black text-2xl">CYBERDUDE</h1>
+      <p class="text-sm text-gray-400 mt-2 font-semibold">
+        Free education for everyone
+      </p>
+    </header>
 
-<main class="m-10">
-    <div class="bg-white p-10 rounded-lg">
-        <h4>Get Free Internship @ CyberDude</h4>
-        <p>Get yourself skilled by joining cyberdude internship</p>
-    </div>
-</main>
-</body>
+    <main class="m-10 flex justify-between space-x-5">
+      <!-- Left box -->
+      <div class="bg-white p-5 rounded-lg flex-1">
+        <h4 class="font-semibold">Get Free Internship @ CyberDude</h4>
+        <p class="text-sm text-gray-600">
+          Get yourself skilled by joining cyberdude internship
+        </p>
+
+        <!-- form -->
+        <form action="" class="my-5">
+          <div class="grid grid-cols-2 gap-5">
+            <!-- Full Name -->
+            <div class="text-sm space-y-1">
+              <label for="fullName" class="block font-semibold"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Full Name"
+                name="fullName"
+                id="fullName"
+                required
+              />
+            </div>
+            <!-- Gender -->
+            <div class="text-sm space-y-1">
+              <label for="gender" class="block font-semibold">Gender</label>
+              <div class="mt-1 space-x-2 text-sm">
+                <label for="male"
+                  ><input type="radio" id="male" name="gender" value="male" required/>
+                  Male</label
+                >
+                <label for="female"
+                  ><input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  Female</label
+                >
+                <label for="others"
+                  ><input
+                    type="radio"
+                    id="others"
+                    name="gender"
+                    value="others"
+                  />
+                  Others</label
+                >
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="text-sm space-y-1">
+              <label for="emailAddress" class="block font-semibold"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-input"
+                name="email"
+                placeholder="you@gmail.com"
+                id="emailAddress"
+                required
+              />
+            </div>
+            <!-- Dob -->
+            <div class="text-sm space-y-1">
+              <label for="dob" class="block font-semibold">Date of Birth</label>
+              <input type="date" class="form-input" name="dob" id="dob" required/>
+            </div>
+            <!-- Skills -->
+            <div class="text-sm space-y-1">
+              <label for="skills" class="block font-semibold"
+                >What Skills do you know already?</label
+              >
+              <input
+                type="text"
+                name="skills"
+                class="form-input"
+                placeholder="Skills seperated  by ;"
+                id="skills"
+                required
+              />
+            </div>
+            <!-- Experience -->
+            <div class="text-sm space-y-1">
+              <label for="experience" class="block font-semibold"
+                >Experience</label
+              >
+              <select name="experience" id="experience" class="form-input" required>
+                <option value="">Select Experience</option>
+                <option value="0.6">less than 6 months</option>
+                <option value="2">less than 2 years</option>
+                <option value="3">less than 3 years</option>
+                <option value="5">less than 5 years</option>
+              </select>
+            </div>
+            <!-- career_changed -->
+            <div class="text-sm space-y-1">
+              <label for="career_changed" class="block font-semibold"
+                >Did Cyberdude Change your career?</label
+              >
+              <textarea
+                name="career_changed"
+                id="career_changed"
+                class="form-input"
+                placeholder="Explain briefly in 250 words"
+                rows="3"
+              ></textarea>
+            </div>
+            <!-- Course Completion -->
+            <div class="text-sm space-y-1">
+              <label for="course_completion" class="block font-semibold"
+                >Have you attended any course completions?</label
+              >
+              <textarea
+                name="course_completion"
+                id="course_completion"
+                class="form-input"
+                placeholder="if any, explain briefly"
+                rows="3"
+              ></textarea>
+            </div>
+            <!-- year of graduation -->
+            <div class="text-sm space-y-1">
+              <label for="studies" class="block font-semibold"
+                >Year of graduation</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                placeholder="B.E,2024"
+                name="studies"
+                id="studies"
+                required
+              />
+            </div>
+            <div></div>
+            <!-- linkedin profile -->
+            <div class="text-sm space-y-1">
+              <label for="linkedin" class="block font-semibold"
+                >Linkedin Profile</label
+              >
+              <input
+                type="url"
+                class="form-input"
+                placeholder="linkedin url"
+                name="linkedin"
+                id="linkedin"
+                required
+              />
+            </div>
+            <!-- Github profile -->
+            <div class="text-sm space-y-1">
+              <label for="github" class="block font-semibold"
+                >Github Profile</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                placeholder="github url"
+                name="github"
+                id="github"
+                required
+              />
+            </div>
+            <!-- Why do you want to join this internship -->
+            <div class="text-sm space-y-1 col-span-2">
+              <label for="career_changed" class="block font-semibold"
+                >Why do you want to join this internship?</label
+              >
+              <textarea
+                name="career_changed"
+                id="career_changed"
+                class="form-input"
+                placeholder="Explain briefly in 250 words"
+                rows="10"
+              ></textarea>
+            </div>
+            <!-- terms and conditions -->
+            <div class="col-span-2">
+              <label for="terms" class="text-xs flex items-center space-x-2">
+                <input type="checkbox" name="terms" required />
+                <span
+                  >I accept the
+                  <a href="#termsContent" class="text-orange-600"
+                    >terms and conditions</a
+                  >
+                  mentioned.</span
+                >
+              </label>
+            </div>
+            <div class="col-span-2">
+              <label for="terms" class="text-xs flex items-center space-x-2">
+                <input type="checkbox" name="terms" required />
+                <span>
+                    I accept I need to following requirements to process this internship
+                </span>
+              </label>
+            </div>
+
+            <!-- button -->
+            <div>
+                <button class="px-4 py-1 bg-orange-600 text-white rounded">Apply</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Left box end -->
+      <!-- Right box -->
+      <div class="bg-white p-5 rounded-lg w-96 text-center" id="termsContent">
+        <h1>Terms and Conditions</h1>
+      </div>
+      <!-- Right box end -->
+    </main>
+  </body>
 </html>
