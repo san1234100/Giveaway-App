@@ -9,8 +9,11 @@ const submitForm=(event)=>{
 
     const formData=new FormData(formEl);
 
-    const data=[...formData.entries()];
-    console.log(data);
+    // const data=[...formData.entries()];
+    // console.log(data);
+    const recordObj=Object.fromEntries(formData);
+    // console.log(recordObj);
+ createRecord(recordObj);
     // update UI logic
     updateUI();
 }
