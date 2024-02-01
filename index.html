@@ -52,13 +52,14 @@
               <label for="gender" class="block font-semibold">Gender</label>
               <div class="mt-1 space-x-2 text-sm">
                 <label for="male"
-                  ><input type="radio" id="male" name="gender" value="male" required/>
+                  ><input type="radio" id="male" class="checked:accent-blue-500" name="gender" value="male" required/>
                   Male</label
                 >
                 <label for="female"
                   ><input
                     type="radio"
                     id="female"
+                    class="checked:accent-blue-500"
                     name="gender"
                     value="female"
                   />
@@ -68,6 +69,7 @@
                   ><input
                     type="radio"
                     id="others"
+                    class="checked:accent-blue-500"
                     name="gender"
                     value="others"
                   />
@@ -234,10 +236,33 @@
       </div>
       <!-- Left box end -->
       <!-- Right box -->
-      <div class="bg-white p-5 rounded-lg w-96 text-center" id="termsContent">
-        <h1>Terms and Conditions</h1>
+      <div class="bg-white p-5 rounded-lg w-96 h-fit text-center" id="termsContent">
+        <h3 class="text-sm font-semibold">Terms and Conditions.</h3>
+            <p class="text-md mt-2">
+                This program is only for people who need it badly. If you can afford education, please look at the
+                private training insitutitions which offers the same education. <br> <br>
+                We can understand money is essential but we wanted to make sure that, this program doesn’t offers you
+                any stipend. Its purely skill oriented.
+                This program is more than learning. you will learn leadership, communication, workmanship etc.
+
+                Take a outh that, if you learn something here, share it with the other.
+            <ul class="text-xs list-disc p-5 space-y-2" id="conditions">
+            </ul>
+            </p>
       </div>
       <!-- Right box end -->
     </main>
+    <div class="bg-emerald-500 max-w-xl p-10 mx-auto text-center rounded m-10">
+      <div class="flex items-center space-x-2">
+       <div class="text-4xl">🙂</div>
+      
+      <div>
+        <h1 class="font-semibold text-white text-lg">Thank you. we received your application.</h1>
+        <p class="text-gray-600">Your application has been successfully registered.</p>
+        <button class="px-4 py-0.5 bg-blue-600 rounded hover:bg-blue-700">Share</button>
+    </div>
+    </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
