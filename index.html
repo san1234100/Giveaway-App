@@ -16,7 +16,7 @@
   </head>
   <body class="bg-gray-200">
     <header class="p-10 bg-blue-900 text-center">
-      <h1 class="text-orange-600 font-black text-2xl">CYBERDUDE</h1>
+      <a href="./index.html" class="text-orange-600 font-black text-2xl">CYBERDUDE</a>
       <p class="text-sm text-gray-400 mt-2 font-semibold">
         Free education for everyone
       </p>
@@ -208,7 +208,7 @@
             <!-- terms and conditions -->
             <div class="col-span-2">
               <label for="terms" class="text-xs flex items-center space-x-2">
-                <input type="checkbox" name="terms" required />
+                <input type="checkbox" class="accent-blue-600" name="terms" required />
                 <span
                   >I accept the
                   <a href="#termsContent" class="text-orange-600"
@@ -220,7 +220,7 @@
             </div>
             <div class="col-span-2">
               <label for="terms" class="text-xs flex items-center space-x-2">
-                <input type="checkbox" name="terms" required />
+                <input type="checkbox" class="accent-blue-600" name="terms" required />
                 <span>
                     I accept I need to following requirements to process this internship
                 </span>
@@ -252,17 +252,18 @@
       </div>
       <!-- Right box end -->
     </main>
-    <div class="bg-emerald-500 max-w-xl p-10 mx-auto text-center rounded m-10">
+    <section class="bg-emerald-500 max-w-xl p-10 mx-auto text-center rounded m-10 hidden" id="formSubmitted">
       <div class="flex items-center space-x-2">
        <div class="text-4xl">🙂</div>
       
       <div>
         <h1 class="font-semibold text-white text-lg">Thank you. we received your application.</h1>
         <p class="text-gray-600">Your application has been successfully registered.</p>
-        <button class="px-4 py-0.5 bg-blue-600 rounded hover:bg-blue-700">Share</button>
+        <button class="px-4 py-0.5 text-white bg-blue-600 rounded hover:bg-blue-700">Share</button>
     </div>
     </div>
-    </div>
+    </section>
+    <!-- script :For interactivity -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
