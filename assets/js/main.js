@@ -8,8 +8,9 @@ const submitForm=(event)=>{
     event.preventDefault();
 
     const formData=new FormData(formEl);
-    console.log(formData);
-    
+
+    const data=[...formData.entries()];
+    console.log(data);
     // update UI logic
     updateUI();
 }
