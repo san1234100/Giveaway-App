@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giveaway App</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="bg-gray-200">
+    <header class="p-10 bg-blue-900 text-center">
+      <a href="./index.html" class="text-orange-600 font-black text-2xl">CYBERDUDE</a>
+      <p class="text-sm text-gray-400 mt-2 font-semibold">
+        Free education for everyone
+      </p>
+    </header>
+
+    <main class="m-10 flex justify-between space-x-5  max-w-lg mx-auto">
+      <div class="bg-white p-5 rounded-lg flex-1">
+        <h4 class="font-semibold">Admin panel</h4>
+        <p class="text-sm text-gray-600">
+          Login to view records.
+        </p>
+
+        <!-- form -->
+        <form  class="my-5 space-y-3" id="loginForm">
+            <!-- Email -->
+            <div class="text-sm space-y-1">
+              <label for="email" class="block font-semibold"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Email Address"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+               <!-- password -->
+               <div class="text-sm space-y-1">
+                <label for="password" class="block font-semibold"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="password"
+                  name="password"
+                  id="password"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            <!-- button -->
+            <div class="text-center">
+                <button class="px-4 py-1 bg-orange-600 text-white rounded">Login</button>
+            </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script  src="./assets/js/firebase.js"></script>
+
+        <!-- script :For interactivity -->
+        <script src="./assets/js/login.js"></script>
+  </body>
+</html>
