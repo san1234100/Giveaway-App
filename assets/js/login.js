@@ -19,6 +19,12 @@ loginUser(email,password).then(user=>{
     if(err.errorCode==='auth/internal-error'){
        alert(`UserName/Password doesn't exist`)
     }
+    if(err.errorCode==='auth/wrong-password'){
+        alert(`Invalid Password`)
+     }
+     if(err.errorCode==='auth/too-many-requests'){
+        alert(`Try Again Later`)
+     }
     loginFromEl.reset();
 })
 // console.log(loginRecord);

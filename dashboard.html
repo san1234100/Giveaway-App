@@ -24,6 +24,7 @@
         localStorage.removeItem("user");
         window.location.replace("./login.html");
       };
+
     </script>
   </head>
   <body class="bg-gray-200">
@@ -37,10 +38,55 @@
       <button class="px-4 py-2 rounded bg-white text-sm mt-3" onclick="logout()">Logout</button>
     </header>
 
-    <main class="m-10 flex justify-between space-x-5 max-w-lg mx-auto">
+    <main class="m-10 flex justify-between space-x-5 max-w-4xl mx-auto">
       <div class="bg-white p-5 rounded-lg flex-1">
         <h4 class="font-semibold">Dashboard</h4>
         <p class="text-sm text-gray-600">See the list of registration here</p>
+
+        <table class="w-full mt-5 text-sm text-center">
+          <thead>
+            <tr>
+              <th class="p-2 border">S.no</th>
+              <th class="p-2 border">Name</th>
+              <th class="p-2 border">Communication</th>
+              <th class="p-2 border">Skills</th>
+              <th class="p-2 border">Studies</th>
+              <th class="p-2 border">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs font-medium">
+              <td class="p-2 border w-10">1</td>
+              <td class="p-2 border">
+                <div>
+                  <span class="text-sm font-semibold">Mr.Vignesh</span>
+                  <div>Male | 12,may,2001</div>
+                </div>
+              </td>
+              <td class="p-2 border">
+                <div>
+                  <span>
+                    <a href="tel:9787346343">9787346343</a>
+                  </span>
+                  <div>
+                    <a href="mailto:vignesh@gmail.com">vignesh@gmail.com</a>
+                  </div>
+                </div>
+              </td>
+              <td class="p-2 border">
+                <div>
+                  <span>html,css,js</span>
+                  <div>10 years</div>
+                </div>
+              </td>
+              <td class="p-2 border">B.E CSE</td>
+              <td class="p-2  border space-x-4 text-center w-48">
+                <button class="py-1 px-4 bg-green-500 text-white rounded hover:bg-green-600">View</button>
+                <button class="py-1 px-4 bg-red-500 text-white rounded hover:bg-red-600">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
 
@@ -51,6 +97,7 @@
     <script src="./assets/js/firebase.js"></script>
 
     <!-- script :For interactivity -->
-    <script src="./assets/js/login.js"></script>
+    <!-- <script src="./assets/js/login.js"></script> -->
+    <script src="./assets/js/admin.js"></script>
   </body>
 </html>

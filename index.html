@@ -77,20 +77,36 @@
                 >
               </div>
             </div>
-            <!-- Email -->
-            <div class="text-sm space-y-1">
-              <label for="emailAddress" class="block font-semibold"
-                >Email Address</label
-              >
-              <input
-                type="email"
-                class="form-input"
-                name="email"
-                placeholder="you@gmail.com"
-                id="emailAddress"
-                required
-              />
-            </div>
+          <div class="grid grid-cols-2 gap-x-4">
+              <!-- Email -->
+              <div class="text-sm space-y-1">
+                <label for="emailAddress" class="block font-semibold"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-input"
+                  name="email"
+                  placeholder="you@gmail.com"
+                  id="emailAddress"
+                  required
+                />
+              </div>
+               <!-- Phone number -->
+               <div class="text-sm space-y-1">
+                <label for="phoneNumber" class="block font-semibold"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-input"
+                  name="number"
+                  placeholder="Mobile Number"
+                  id="phoneNumber"
+                  required
+                />
+              </div>
+          </div>
             <!-- Dob -->
             <div class="text-sm space-y-1">
               <label for="dob" class="block font-semibold">Date of Birth</label>
@@ -208,9 +224,8 @@
             <!-- terms and conditions -->
             <div class="col-span-2">
               <label for="terms" class="text-xs flex items-center space-x-2">
-                <input type="checkbox" class="accent-blue-600" name="terms" required />
-                <span
-                  >I accept the
+                <input type="checkbox" id="terms" class="accent-blue-600" name="terms" required />
+                <span class="select-none">I accept the
                   <a href="#termsContent" class="text-orange-600"
                     >terms and conditions</a
                   >
@@ -220,8 +235,8 @@
             </div>
             <div class="col-span-2">
               <label for="requirement_terms" class="text-xs flex items-center space-x-2">
-                <input type="checkbox" class="accent-blue-600" name="requirement_terms" required />
-                <span>
+                <input type="checkbox" class="accent-blue-600" id="requirement_terms" name="requirement_terms" required />
+                <span class="select-none">
                     I accept I need to following requirements to process this internship
                 </span>
               </label>
@@ -252,6 +267,8 @@
       </div>
       <!-- Right box end -->
     </main>
+
+
     <section class="bg-emerald-500 max-w-xl p-10 mx-auto text-center rounded m-10 hidden" id="formSubmitted">
       <div class="flex items-center space-x-2">
        <div class="text-4xl">🙂</div>

@@ -1,7 +1,7 @@
 const mainEl=document.querySelector('main');
 const successfulUIEl=document.getElementById('formSubmitted');
 const formEl=document.querySelector('form');
-console.log(mainEl,successfulUIEl,formEl);
+// console.log(mainEl,successfulUIEl,formEl);
 
 const validateForm=()=>{
     const formInputEls=formEl.querySelectorAll('input , select , textarea'); //To select multiple tags use ,
@@ -24,7 +24,7 @@ event.preventDefault();
     // const data=[...formData.entries()];
     // console.log(data);
     const recordObj=Object.fromEntries(formData);
-    console.log(recordObj);
+    // console.log(recordObj);
  createRecord(recordObj);
     // update UI logic
     updateUI();
